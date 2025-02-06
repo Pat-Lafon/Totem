@@ -1,0 +1,11 @@
+(executable
+ (public_name Totem)
+ (name main)
+ (libraries ppxlib)
+ (preprocess
+  (pps ppxlib.metaquot my_ppx)))
+
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))
